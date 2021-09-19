@@ -1,0 +1,150 @@
+.header {
+  scroll-behavior: smooth;
+  position: relative;
+
+  .row {
+    height: 99px;
+  }
+
+  .lines__menu {
+    width: 100%;
+    max-height: 300px;
+
+    position: absolute;
+    top: 67px;
+    z-index: 100;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #16151b;
+    box-shadow: 0px 7px 11px -14px #ffffff;
+
+    @include my_transition();
+
+    .header__lines__list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      li {
+        &:first-child {
+          margin-top: 15px;
+        }
+        padding: 5px;
+        margin-bottom: 15px;
+
+        a {
+          text-decoration: none;
+          position: relative;
+          color: #fff;
+          &::after {
+            opacity: 0;
+            content: "";
+            display: block;
+            background-image: url(".../img/hover_line.png");
+            background-size: cover;
+            width: 42px;
+            height: 2px;
+            position: absolute;
+            text-decoration: none;
+            margin: auto;
+            top: 40px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+            @include my_transition();
+          }
+
+          &:hover:after {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  &__lines {
+    display: flex;
+    width: fit-content;
+
+    .lines__button {
+      outline: none;
+      border: none;
+      background-color: $blue_color;
+
+      .lines__icon {
+      }
+    }
+
+    &__items {
+    }
+  }
+
+  &__nav {
+    margin-bottom: 2px;
+  }
+
+  &__logo {
+    display: flex;
+    padding-left: 2px;
+
+    &_sub {
+      padding-left: 7px;
+      height: 16px;
+      width: 51px;
+      align-self: flex-end;
+    }
+  }
+
+  .header__list {
+    display: inline-flex;
+    flex-direction: row;
+
+    li {
+      margin-left: 23px;
+      a {
+        outline: none;
+      }
+    }
+
+    .header__nav__items {
+      color: #fffefe;
+      font-family: "Source Sans Pro";
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 41px;
+      position: relative;
+      text-decoration: none;
+      &:after {
+        opacity: 0;
+        content: "";
+        display: block;
+        background-image: url(".../img/hover_line.png");
+        background-size: cover;
+        width: 42px;
+        height: 2px;
+        position: absolute;
+        text-decoration: none;
+        margin: auto;
+        top: 40px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+      }
+
+      &:hover:after {
+        opacity: 1;
+      }
+    }
+  }
+}
