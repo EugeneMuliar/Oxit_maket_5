@@ -1,7 +1,7 @@
 @import "partials/reset"; // include reset
+@import "partials/mixins"; //include mixin`s.
 @import "partials/fonts"; //include fonts
 @import "partials/vars"; //include variables.
-@import "partials/mixins"; //include mixin`s.
 
 // Variables
 
@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  font-family: "Source Sans Pro", sans-serif, serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 18px;
   margin: 0 auto;
 

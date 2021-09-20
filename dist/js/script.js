@@ -1,7 +1,4 @@
-(function () {
-  "use strict";
-
-  $(document).ready(function () {
+$(document).ready(function () {
     $(".slider").slick({
       // autoplay
       arrows: false,
@@ -26,20 +23,7 @@
       ],
     });
 
-    var show_lines = document.getElementById("lines__menu");
-    var lines_button = document.getElementById("lines-button");
-    show_lines.style.opacity = "0";
-    lines_button.addEventListener("click", function () {
-      if (show_lines.style.opacity == "0") {
-        show_lines.style.opacity = "1";
-      } else {
-        show_lines.style.opacity = "0";
-      }
-    });
-    window.addEventListener("resize", function () {
-      if (window.innerWidth >= 765) {
-        show_lines.style.opacity = "0";
-      }
-    });
+
+
   });
-})();
+

@@ -33,7 +33,8 @@ let {src, dest} = require('gulp'),
     scss = require('gulp-sass')(require('sass')),
     ttf2woff = require('gulp-ttf2woff'),
     ttf2woff2 = require('gulp-ttf2woff2'),
-    fs = require('fs')
+    fs = require('fs'), 
+    fonter = require('gulp-fonter')
 
 function browserSync(params){
     browsersync.init({
@@ -107,7 +108,7 @@ function fonts() {
         .pipe(ttf2woff2())
         .pipe(dest(path.build.fonts));
 };
-let build = gulp.series(clean, gulp.parallel( js, css,  html, fonts, images), fontsStyle);
+let build = gulp.series(clean, gulp.parallel( js, css,  html, fonts, images),fontsStyle);
 let watch = gulp.parallel(build,watchFiles, browserSync);
 
 exports.js = js;
