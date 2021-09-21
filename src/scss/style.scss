@@ -3,12 +3,6 @@
 @import "partials/fonts"; //include fonts
 @import "partials/vars"; //include variables.
 
-// Variables
-
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 18px;
@@ -22,14 +16,17 @@ body {
     border: 0;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1170px) {
     .container {
-      max-width: 1200px;
+      max-width: 1170px;
     }
   }
 }
+body._lock{
+  overflow: hidden;
+}
 
-@import "partials/pointbreak";
+
 @import "partials/visit";
 @import "partials/header";
 @import "partials/features";
@@ -41,6 +38,7 @@ body {
 @import "partials/findus";
 @import "partials/footer";
 
+@import "partials/pointbreak";
 @import "partials/slick.scss";
 
 

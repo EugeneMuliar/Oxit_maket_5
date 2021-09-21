@@ -1,6 +1,6 @@
+//Slider
 $(document).ready(function () {
     $(".slider").slick({
-      // autoplay
       arrows: false,
       infinite: true,
       slidesToShow: 2,
@@ -22,8 +22,23 @@ $(document).ready(function () {
         },
       ],
     });
-
-
-
   });
 
+//Menu burger
+const iconMenu = document.querySelector('.lines__button');
+if(iconMenu){
+  const bodyMenu = document.querySelector('.header__nav');
+  iconMenu.addEventListener("click", function(e){
+    document.body.classList.toggle('_lock');
+    iconMenu.classList.toggle('_active');
+    bodyMenu.classList.toggle('_active');
+  });
+  const itemsMenu = document.querySelectorAll('.header__nav__items');
+  // console.log(itemsMenu)
+  itemsMenu.forEach((item) => {
+    item.addEventListener("click", function(e){
+      bodyMenu.classList.remove('_active');
+      document.body.classList.remove('_lock');
+    })
+  })
+}

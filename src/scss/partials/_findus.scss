@@ -83,14 +83,14 @@
 }
 
 #contact__phone {
-  
     margin-top: 92px;
     margin-bottom: 0px;
-  
+
   img{
     margin-top: 0;
     margin-bottom: 0;
   }
+  
   .contact__block__text {
     width: 200px;
     padding-right: 5px;
@@ -155,8 +155,6 @@
       font-weight: 700;
       text-transform: uppercase;
       text-decoration: none;
-
-      @include my_transition();
 
       &:hover {
         outline: none;

@@ -59,8 +59,6 @@
       fill: #ffffff;
       opacity: 0.2;
 
-      @include my_transition();
-
       &:hover {
         opacity: 1;
         fill: $blue_color;
@@ -75,8 +73,6 @@
       text-decoration: none;
       outline: none;
       border: none;
-
-      @include my_transition();
 
       &:hover {
         text-decoration: none;

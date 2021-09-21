@@ -1,5 +1,4 @@
 .pricings {
-  scroll-behavior: smooth;
 
   min-height: 779px;
 
@@ -50,28 +49,20 @@
   .pricings__active {
     .pricings__block_title {
       color: $blue_color;
-
-      @include my_transition();
     }
 
     .pricings__block_price {
       background-color: $blue_color;
       color: #ffffff;
-
-      @include my_transition();
     }
 
     .pricings__block_about_order {
       background-color: $blue_color;
       color: #ffffff;
-
-      @include my_transition();
     }
 
     .periodicity {
       color: #ffffff;
-
-      @include my_transition();
     }
 
     &:hover {
@@ -100,25 +91,21 @@
 
     .periodicity {
       color: #000000;
-      @include my_transition();
     }
 
     .pricings__block_title {
       color: #000000;
-      @include my_transition();
     }
 
     .pricings__block_price {
       background-color: #ffffff;
       color: #000000;
-      @include my_transition();
     }
 
     .pricings__block_about_order {
       background-color: #ffffff;
       color: $blue_color;
       text-decoration: none;
-      @include my_transition();
     }
 
     &:hover {
