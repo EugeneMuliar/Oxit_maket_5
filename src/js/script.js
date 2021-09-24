@@ -34,7 +34,6 @@ if(iconMenu){
     bodyMenu.classList.toggle('_active');
   });
   const itemsMenu = document.querySelectorAll('.header__nav__items');
-  // console.log(itemsMenu)
   itemsMenu.forEach((item) => {
     item.addEventListener("click", function(e){
       bodyMenu.classList.remove('_active');
